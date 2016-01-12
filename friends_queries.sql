@@ -6,10 +6,10 @@ SELECT username,pass FROM user;
 
 SELECT * FROM user where USERNAME="maukka";
 
-SELECT * from user WHERE username="maukka" and pass="paukka" order bgetUserIdFriendsy username;
+SELECT * from user WHERE username="maukka" and pass="paukka" order by username;
 
-SELECT user.username, friend.friend_name, friend.friend_address, friend.friend_age FROM user
-INNER JOIN friend on user.user_id=friend.user_id WHERE user.username = "paukka";
+SELECT user.username, friend.name, friend.address, friend.age FROM user
+INNER JOIN friend on user.user_id=friend.user_id WHERE user.username = "maukka";
 
 
 SELECT * from friend;
